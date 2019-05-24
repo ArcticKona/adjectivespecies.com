@@ -1,0 +1,41 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+
+{% for post in paginator.posts %}
+<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+<p class="meta">{{ post.date|date_to_string }} | {{ post.author.first_name }} {{ post.author.last_name }}</p>
+<div class="excerpt">{{ post.excerpt|safe }}</div>
+<p class="meta"><a href="{{ site.basesurl }}{{ post.url }}">Read more &rarr;</a></p>
+<hr />
+{% endfor %}
+
+<!-- Pagination links -->
+<nav aria-label"Post pages">
+<ul class="pagination">
+  {% if paginator.previous_page %}
+    <li class="page-item">
+   <a href="{{ paginator.previous_page_path }}" class="page-link">
+      Previous
+    </a>
+  {% else %}
+    <li class="page-item disabled">
+    <a href="#" class="page-link">Previous</a>
+  {% endif %}
+    </li>
+  <li class="page-item active">
+      <a href="#" class="page-link">Page: {{ paginator.page }} of {{ paginator.total_pages }}</a>
+  </li>
+  {% if paginator.next_page %}
+    <li class="page-item">
+    <a href="{{ paginator.next_page_path }}" class="page-link">Next</a>
+  {% else %}
+    <li class="page-item disabled">
+    <a href="#" class="page-link">Next</a>
+  {% endif %}
+  </li>
+</ul>
+</nav>

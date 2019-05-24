@@ -1,0 +1,76 @@
+/*
+Theme Name: AdjectiveSpecies 2015
+Theme URI: https://github.com/adjspecies/adjspecies-2015
+Author: Makyo
+Author URI: http://drab-makyo.com
+Description: The [a][s] 2015 theme is designed to be an improvement on the previous theme.
+Template: twentythirteen
+License: MIT
+License URI: https://github.com/adjspecies/adjspecies-2015/blob/master/LICENSE
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: adjspecies2015
+*/
+.adjspecies-header h1, .adjspecies-header h2 {
+    display: none;
+}
+
+.header {
+    height: 288px;
+    background-image: url('as-stripes.png');
+    margin: 0;
+}
+
+.adjspecies-header .navbar {
+    margin-bottom: 0;
+}
+
+.adjspecies-header .header-image {
+    background-image: url('as-header.png');
+    width: 1000px;
+    height: 288px;
+    margin: 0 auto;
+}
+
+.adjspecies-header button,
+.adjspecies-header button:hover,
+.adjspecies-header button:focus {
+    background: #fff !important;
+}
+
+@media screen and (max-width:  1000px) {
+    .adjspecies-header .header-image {
+        background-image: url('as-header.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        width: 350px;
+        height: 288px;
+        margin: 0 auto;
+    }
+}
+
+.adjspecies-post-author {
+    padding: 0!important;
+}
+
+.adjspecies-post-author img {
+    margin-bottom: 0!important;
+}
+
+.adjspecies-footer {
+    position: relative;
+    font-size: 80%;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid #ccc;
+}
+
+.adjspecies-footer strong {
+    font-variant: small-caps;
+    color: #888;
+}
+
+.adjspecies-footer .bottom {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 1em;
+}
