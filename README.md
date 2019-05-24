@@ -3,3 +3,8 @@ The main [adjective][species] site and blog
 
 I'll be porting ~~the 2015 [a][s] theme~~ a theme to Jekyll here.
 
+TODO:
+-	padding and display issues
+-	broken links
+-	add tags and search support 
+
