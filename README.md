@@ -1,5 +1,5 @@
 # adjectivespecies.com
 The main [adjective][species] site and blog
 
-I'll be porting ~~the 2015 [a][s] theme~~ a theme to Jekyll here.
+I'll be porting ~~the 2015 \[a]\[s] theme~~ a theme (but probably the 2015 \[a]\[s]) to Jekyll here.
 
