@@ -1,57 +1,66 @@
 <!DOCTYPE html>
-<!-- much of the code here was ported from the 2015 [adjective][species] Wordpress theme ~ kona -->
-<html style="overflow-x: hidden;">
+<html>
     <head>
     <title>{{ page.title }} | [adjective][species]</title>
         <meta name="viewport" content="width=device-width" />
-
-	<!-- the original CSS (removed) -->
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/css/main.css" />
         <link rel="icon" type="image/png" href="/images/as-ico.png" />
-
-	<!-- replaced with the following assets (production code was same is Github code) -->
-	<script src="/adjspecies-2015/js/jquery.min.js"></script>
-	<script src="/adjspecies-2015/js/bootstrap.js"></script>
-	<link rel="stylesheet" type="text/css" href="/adjspecies-2015/parent-style.css" />
-	<link rel="stylesheet" type="text/css" href="/adjspecies-2015/style.css" />
-	<link rel="stylesheet" type="text/css" href="/adjspecies-2015/css/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" href="/adjspecies-2015/css/bootstrap-theme.css" />
-
         {% if page.additionalHeader %}{{ page.additionalHeader }}{% endif %}
-   </head>
-	{% include header.html %}
-
-   <article class="container">
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="topbar-inner">
+                <div class="container-fluid">
+                    <a class="brand" href="http://adjectivespecies.com">[adjective][species]</a>
+                    <ul class="nav">
+                        <li><a href="https://lovesexfur.com">Love ◦ Sex ◦ Fur</a></li>
+                        <li><a href="https://vis.adjectivespecies.com">Visualizations</a></li>
+                        <li><a href="https://presentations.adjectivespecies.com">Presentations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header>
+            <a href="{{ site.baseurl }}/"><img src="/images/as-header.png" /></a>
+        </header>
+        <article>
+        <section>
+            <ul class="nav">
+                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/contributing" class="nav-link">Contributing</a></li>
+                <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+            </ul>
+        </section>
+        <section>
             <h1>{{page.title}}</h1>
+            <div class="alert alert-message alert-error" role="alert">
+                [adjective][species] is no longer in operation. If you are looking for great furry content, check out our friends over at <a href="https://www.youtube.com/channel/UCTLM2s914zA_O2S6II_BCWw">Culturally F'd</a>. This site is left up as an archive and curiosity only.
+            </div>
                 {{ content }}
-	</article>
+        </section>
+        </article>
+        <footer>
+            Content &copy; [adjective][species], 2011 - 2019 under the CC BY-NC-SA (Attribution - NonCommercial - ShareAlike) license<br />
+        </footer>
 
-            <footer class="adjspecies-footer container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <strong>Micro-About</strong>
-                        <p>[adjective][species] is a blog that takes a look at the furry fandom from the inside. The writings here come from a wide variety of furry authors, and cover any and all meta-furry topics that we can get our paws on.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <strong>Code of Conduct</strong>
-                        <p>[adjective][species] is goverened by the <a href="/code-of-conduct">[a][s] Code of Conduct</a>.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <strong>Contributing</strong>
-                        <p>If you'd like to contribute writing or art to the blog in some way, <a href="/contributing">let us know</a> with a sample or idea and we'll see about fitting you in.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <strong>Copyright Information</strong>
-                        <p>Unless otherwise stated, all content belongs to the author and is licensed under a Creative Commons BY-NC-SA 4.0 license. <a href="https://wiki.creativecommons.org/wiki/Best_practices_for_attribution" target="_blank">Learn about attribution.</a></p>
-                    </div>
-                </div>
-                <div class="row bottom">
-                    <div class="col-md-12">
-                        <p class="visible">WebDev by Makyo and Kona</p>
-                        <p>Content <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /> [adjective][species], Ltd., 2011 - 2019</a> under the Creative Commons BY-NC-SA (Attribution-NonCommercial-ShareAlike) license</p>
-                    </div>
-                </div>
-            </footer>
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//matomo.makyo.io/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '4']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
     </body>
 </html>
-
-
